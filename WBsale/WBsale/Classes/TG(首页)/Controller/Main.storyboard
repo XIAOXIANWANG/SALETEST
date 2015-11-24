@@ -16,29 +16,10 @@
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="sNc-8A-MVl" kind="relationship" relationship="viewControllers" id="YaP-dV-RF3"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7AG-tX-Ggf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-88.5" y="319.5"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="NwD-b3-q2I">
-            <objects>
-                <navigationController id="sNc-8A-MVl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Fat-Yd-rKC"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vx3-bA-aVP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yRD-HS-pBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="366.5" y="319.5"/>
+            <point key="canvasLocation" x="-247.5" y="627.5"/>
         </scene>
     </scenes>
 </document>

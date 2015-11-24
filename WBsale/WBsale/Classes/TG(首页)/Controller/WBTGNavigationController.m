@@ -5,6 +5,8 @@
 //  Created by 王博 on 15/11/24.
 //  Copyright © 2015年 王博. All rights reserved.
 //
+#define RGBA(r, g, b, a)                    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r, g, b)                        RGBA(r, g, b, 1.0f)
 
 #import "WBTGNavigationController.h"
 
@@ -16,13 +18,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self Style2Nav];
+    
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void) Style2Nav{
+    
+    self.tabBarController.tabBar.tintColor = RGB(54, 185,175);
+
+    self.tabBarItem.selectedImage = [[UIImage imageNamed:@"icon_tabbar_homepage_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    self.tabBarItem.image = [[UIImage imageNamed:@"icon_tabbar_homepage"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
+
+
+
+
 }
+
 
 /*
 #pragma mark - Navigation

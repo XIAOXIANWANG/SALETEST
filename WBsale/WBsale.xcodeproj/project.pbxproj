@@ -13,6 +13,7 @@
 		2D03FF4E1C048362000CB0C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D03FF471C048362000CB0C1 /* AppDelegate.m */; };
 		2D0B340B1C048444006966AD /* WBTGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B340A1C048444006966AD /* WBTGNavigationController.m */; };
 		2D0B340D1C048473006966AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0B340C1C048473006966AD /* Main.storyboard */; };
+		2D0B34101C049555006966AD /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B340F1C049555006966AD /* WBHomeViewController.m */; };
 		39B0A496E2573B6BDB641204 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A73458BEEC65B5287569EB68 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,8 @@
 		2D0B34091C048444006966AD /* WBTGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTGNavigationController.h; sourceTree = "<group>"; };
 		2D0B340A1C048444006966AD /* WBTGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTGNavigationController.m; sourceTree = "<group>"; };
 		2D0B340C1C048473006966AD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2D0B340E1C049555006966AD /* WBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHomeViewController.h; sourceTree = "<group>"; };
+		2D0B340F1C049555006966AD /* WBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHomeViewController.m; sourceTree = "<group>"; };
 		796D639406BBC323F57A41AF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A73458BEEC65B5287569EB68 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,6 +127,8 @@
 				2D0B340C1C048473006966AD /* Main.storyboard */,
 				2D0B34091C048444006966AD /* WBTGNavigationController.h */,
 				2D0B340A1C048444006966AD /* WBTGNavigationController.m */,
+				2D0B340E1C049555006966AD /* WBHomeViewController.h */,
+				2D0B340F1C049555006966AD /* WBHomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 			files = (
 				2D0B340B1C048444006966AD /* WBTGNavigationController.m in Sources */,
 				2D03FF4E1C048362000CB0C1 /* AppDelegate.m in Sources */,
+				2D0B34101C049555006966AD /* WBHomeViewController.m in Sources */,
 				2D03FF2F1C048188000CB0C1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

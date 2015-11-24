@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "WBTGNavigationController.h"
+#import "WBHomeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,34 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    UITabBarController *r=[[UITabBarController alloc]init];
+    
+    
+    WBHomeViewController *homeviewc = [[WBHomeViewController alloc]init];
+    
+    WBTGNavigationController *HomeNavigation = [[WBTGNavigationController alloc]initWithRootViewController:homeviewc];
+    
+    
+//    r.childViewControllers = @[HomeNavigation];
+    
+    r.viewControllers = @[HomeNavigation];
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    self.window.rootViewController=r;
+    
+    
+    
     return YES;
 }
 
