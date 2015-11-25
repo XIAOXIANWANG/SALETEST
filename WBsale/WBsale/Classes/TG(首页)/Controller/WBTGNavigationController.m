@@ -26,16 +26,12 @@
 
 - (void) Style2Nav{
     
-    self.tabBarController.tabBar.tintColor = RGB(54, 185,175);
-
+   
     self.tabBarItem.selectedImage = [[UIImage imageNamed:@"icon_tabbar_homepage_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     self.tabBarItem.image = [[UIImage imageNamed:@"icon_tabbar_homepage"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-
-
-
-
-
+    
+    self.tabBarItem.title = @"首页";
 }
 
 

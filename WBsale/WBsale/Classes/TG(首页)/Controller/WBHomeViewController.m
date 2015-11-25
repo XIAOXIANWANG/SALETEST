@@ -7,8 +7,13 @@
 //
 
 #import "WBHomeViewController.h"
+#import "WBHomeNacigationBar.h"
+#import "WBTestNavBar.h"
 
 @interface WBHomeViewController ()
+@property (nonatomic,strong) UITableView         *homeTableView;
+@property (nonatomic,strong) WBHomeNacigationBar *wbhomenavigationbar;
+
 
 @end
 
@@ -16,22 +21,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:0.519 green:0.999 blue:1.000 alpha:1.000];
+
+    [self setStyle];
+    
+    [self Allviews];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void) setStyle
+{
+    
+    [self.navigationController.navigationBar setHidden:YES];
+    
 }
 
-/*
-#pragma mark - Navigation
+- (void)Allviews
+{
+//    CGRect myBarFrame = CGRectMake(0, 0,screen_width , 64);
+//    
+//    
+//    _wbhomenavigationbar = [[WBHomeNacigationBar alloc]initWithFrame:myBarFrame];
+//
+//    [self.view addSubview:_wbhomenavigationbar];
+    
+    WBTestNavBar *bar = [WBTestNavBar dropdown];
+    [self.view addSubview:bar];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
 
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    [self.wbhomenavigationbar.midSearch resignFirstResponder];
+
+
+}
 @end

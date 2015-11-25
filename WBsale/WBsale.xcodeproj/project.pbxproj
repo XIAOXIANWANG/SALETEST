@@ -14,6 +14,9 @@
 		2D0B340B1C048444006966AD /* WBTGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B340A1C048444006966AD /* WBTGNavigationController.m */; };
 		2D0B340D1C048473006966AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0B340C1C048473006966AD /* Main.storyboard */; };
 		2D0B34101C049555006966AD /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B340F1C049555006966AD /* WBHomeViewController.m */; };
+		2D3CE5931C055A3100A43964 /* WBHomeNacigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3CE5921C055A3100A43964 /* WBHomeNacigationBar.m */; };
+		2D3CE5971C05A31200A43964 /* WBnavBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D3CE5961C05A31200A43964 /* WBnavBar.xib */; };
+		2D3CE59A1C05A82E00A43964 /* WBTestNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3CE5991C05A82E00A43964 /* WBTestNavBar.m */; };
 		39B0A496E2573B6BDB641204 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A73458BEEC65B5287569EB68 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,13 @@
 		2D0B340C1C048473006966AD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2D0B340E1C049555006966AD /* WBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHomeViewController.h; sourceTree = "<group>"; };
 		2D0B340F1C049555006966AD /* WBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHomeViewController.m; sourceTree = "<group>"; };
+		2D3CE58C1C054DDF00A43964 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2D3CE58D1C05516800A43964 /* WBconst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBconst.h; sourceTree = "<group>"; };
+		2D3CE5911C055A3100A43964 /* WBHomeNacigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHomeNacigationBar.h; sourceTree = "<group>"; };
+		2D3CE5921C055A3100A43964 /* WBHomeNacigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHomeNacigationBar.m; sourceTree = "<group>"; };
+		2D3CE5961C05A31200A43964 /* WBnavBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBnavBar.xib; sourceTree = "<group>"; };
+		2D3CE5981C05A82E00A43964 /* WBTestNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTestNavBar.h; sourceTree = "<group>"; };
+		2D3CE5991C05A82E00A43964 /* WBTestNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTestNavBar.m; sourceTree = "<group>"; };
 		796D639406BBC323F57A41AF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A73458BEEC65B5287569EB68 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +117,8 @@
 		2D03FF481C048362000CB0C1 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				2D3CE58C1C054DDF00A43964 /* PrefixHeader.pch */,
+				2D3CE58D1C05516800A43964 /* WBconst.h */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -143,6 +155,11 @@
 		2D03FF4D1C048362000CB0C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2D3CE5911C055A3100A43964 /* WBHomeNacigationBar.h */,
+				2D3CE5921C055A3100A43964 /* WBHomeNacigationBar.m */,
+				2D3CE5981C05A82E00A43964 /* WBTestNavBar.h */,
+				2D3CE5991C05A82E00A43964 /* WBTestNavBar.m */,
+				2D3CE5961C05A31200A43964 /* WBnavBar.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3CE5971C05A31200A43964 /* WBnavBar.xib in Resources */,
 				2D0B340D1C048473006966AD /* Main.storyboard in Resources */,
 				2D03FF3D1C048188000CB0C1 /* LaunchScreen.storyboard in Resources */,
 				2D03FF3A1C048188000CB0C1 /* Assets.xcassets in Resources */,
@@ -286,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3CE59A1C05A82E00A43964 /* WBTestNavBar.m in Sources */,
+				2D3CE5931C055A3100A43964 /* WBHomeNacigationBar.m in Sources */,
 				2D0B340B1C048444006966AD /* WBTGNavigationController.m in Sources */,
 				2D03FF4E1C048362000CB0C1 /* AppDelegate.m in Sources */,
 				2D0B34101C049555006966AD /* WBHomeViewController.m in Sources */,
@@ -392,6 +412,8 @@
 			baseConfigurationReference = 12DC1F525DF12F27CEFF308B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WBsale/Classes/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = WBsale/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nwsp.WBsale;
@@ -404,6 +426,8 @@
 			baseConfigurationReference = 796D639406BBC323F57A41AF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WBsale/Classes/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = WBsale/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nwsp.WBsale;

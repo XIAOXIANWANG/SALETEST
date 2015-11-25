@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "WBTGNavigationController.h"
 #import "WBHomeViewController.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -20,32 +22,43 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    UITabBarController *r=[[UITabBarController alloc]init];
+    /**
+     *   加载子控件
+     */
+    [self buildView];
+//
+
+    return YES;
+}
+
+- (void)mainUIsetStyle
+{
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bg_nav"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance]setTintColor: xnavigationBarColor];
     
     
+    [[UINavigationBar appearance] setBackgroundColor:xnavigationBarColor];
+    
+    
+    
+    
+
+}
+- (void)buildView{
+    
+    UITabBarController *mainTabBarC=[[UITabBarController alloc]init];
+
     WBHomeViewController *homeviewc = [[WBHomeViewController alloc]init];
     
     WBTGNavigationController *HomeNavigation = [[WBTGNavigationController alloc]initWithRootViewController:homeviewc];
+
+    mainTabBarC.viewControllers = @[HomeNavigation];
     
     
-//    r.childViewControllers = @[HomeNavigation];
+    mainTabBarC.tabBar.tintColor = xnavigationBarColor;
     
-    r.viewControllers = @[HomeNavigation];
-    
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    self.window.rootViewController=r;
-    
-    
-    
-    return YES;
+    self.window.rootViewController=mainTabBarC;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
