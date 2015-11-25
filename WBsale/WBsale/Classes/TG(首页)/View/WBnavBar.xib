@@ -41,16 +41,6 @@
                         <constraint firstItem="Fff-el-d3v" firstAttribute="leading" secondItem="epL-6X-Hq2" secondAttribute="leading" id="g15-Bv-NML"/>
                     </constraints>
                 </view>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入搜索城市" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l5B-Vi-I4Y">
-                    <rect key="frame" x="110" y="16" width="169" height="30"/>
-                    <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="wOV-pF-akm"/>
-                    </constraints>
-                    <color key="textColor" red="0.96519503569999998" green="1" blue="0.9687953372" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-UQ-x9c" userLabel="map">
                     <rect key="frame" x="348" y="16" width="46" height="30"/>
                     <animations/>
@@ -77,6 +67,16 @@
                         <constraint firstAttribute="height" constant="1" id="9X4-vn-tHT"/>
                     </constraints>
                 </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入搜索城市" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l5B-Vi-I4Y">
+                    <rect key="frame" x="110" y="16" width="169" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="wOV-pF-akm"/>
+                    </constraints>
+                    <color key="textColor" red="0.96519503569999998" green="1" blue="0.9687953372" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="0.12941176469999999" green="0.75294117650000003" blue="0.68235294120000001" alpha="1" colorSpace="deviceRGB"/>
@@ -98,7 +98,15 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="494" y="144"/>
+            <connections>
+                <outlet property="leftImageView" destination="chk-F8-rGU" id="CV9-aD-HVw"/>
+                <outlet property="leftLabel" destination="Fff-el-d3v" id="Qi5-lV-RIa"/>
+                <outlet property="leftView" destination="epL-6X-Hq2" id="Vhu-q0-Qb2"/>
+                <outlet property="mapButton" destination="TNz-UQ-x9c" id="IzY-ER-KbQ"/>
+                <outlet property="midSearchBar" destination="l5B-Vi-I4Y" id="7QQ-Hp-90g"/>
+                <outlet property="searchBtn" destination="VY4-wb-MdM" id="jPV-UN-rpN"/>
+            </connections>
+            <point key="canvasLocation" x="508" y="144"/>
         </view>
     </objects>
     <resources>

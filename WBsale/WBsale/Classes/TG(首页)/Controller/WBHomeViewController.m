@@ -7,12 +7,10 @@
 //
 
 #import "WBHomeViewController.h"
-#import "WBHomeNacigationBar.h"
 #import "WBTestNavBar.h"
 
 @interface WBHomeViewController ()
 @property (nonatomic,strong) UITableView         *homeTableView;
-@property (nonatomic,strong) WBHomeNacigationBar *wbhomenavigationbar;
 
 
 @end
@@ -36,12 +34,6 @@
 
 - (void)Allviews
 {
-//    CGRect myBarFrame = CGRectMake(0, 0,screen_width , 64);
-//    
-//    
-//    _wbhomenavigationbar = [[WBHomeNacigationBar alloc]initWithFrame:myBarFrame];
-//
-//    [self.view addSubview:_wbhomenavigationbar];
     
     WBTestNavBar *bar = [WBTestNavBar dropdown];
     [self.view addSubview:bar];
@@ -50,7 +42,7 @@
 
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//    [self.wbhomenavigationbar.midSearch resignFirstResponder];
+
 
 
 }
