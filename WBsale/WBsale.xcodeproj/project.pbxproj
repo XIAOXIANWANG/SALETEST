@@ -16,6 +16,11 @@
 		2D0B34101C049555006966AD /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B340F1C049555006966AD /* WBHomeViewController.m */; };
 		2D3CE5971C05A31200A43964 /* WBnavBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D3CE5961C05A31200A43964 /* WBnavBar.xib */; };
 		2D3CE59A1C05A82E00A43964 /* WBTestNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3CE5991C05A82E00A43964 /* WBTestNavBar.m */; };
+		2D3CE59F1C05C85800A43964 /* menuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D3CE59E1C05C85800A43964 /* menuData.plist */; };
+		2D3CE5A21C05CFDB00A43964 /* WBMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3CE5A11C05CFDB00A43964 /* WBMainTableViewCell.m */; };
+		2D3CE5A51C05D42A00A43964 /* JZMTBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3CE5A41C05D42A00A43964 /* JZMTBtnView.m */; };
+		2D3CE5A81C05D9BD00A43964 /* RushCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3CE5A71C05D9BD00A43964 /* RushCell.m */; };
+		2D3CE5AB1C05DA7100A43964 /* RushDealsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3CE5AA1C05DA7100A43964 /* RushDealsModel.m */; };
 		39B0A496E2573B6BDB641204 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A73458BEEC65B5287569EB68 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +43,15 @@
 		2D3CE5961C05A31200A43964 /* WBnavBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBnavBar.xib; sourceTree = "<group>"; };
 		2D3CE5981C05A82E00A43964 /* WBTestNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTestNavBar.h; sourceTree = "<group>"; };
 		2D3CE5991C05A82E00A43964 /* WBTestNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTestNavBar.m; sourceTree = "<group>"; };
+		2D3CE59E1C05C85800A43964 /* menuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = menuData.plist; sourceTree = "<group>"; };
+		2D3CE5A01C05CFDB00A43964 /* WBMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainTableViewCell.h; sourceTree = "<group>"; };
+		2D3CE5A11C05CFDB00A43964 /* WBMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainTableViewCell.m; sourceTree = "<group>"; };
+		2D3CE5A31C05D42A00A43964 /* JZMTBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMTBtnView.h; sourceTree = "<group>"; };
+		2D3CE5A41C05D42A00A43964 /* JZMTBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMTBtnView.m; sourceTree = "<group>"; };
+		2D3CE5A61C05D9BD00A43964 /* RushCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RushCell.h; sourceTree = "<group>"; };
+		2D3CE5A71C05D9BD00A43964 /* RushCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RushCell.m; sourceTree = "<group>"; };
+		2D3CE5A91C05DA7100A43964 /* RushDealsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RushDealsModel.h; sourceTree = "<group>"; };
+		2D3CE5AA1C05DA7100A43964 /* RushDealsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RushDealsModel.m; sourceTree = "<group>"; };
 		796D639406BBC323F57A41AF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A73458BEEC65B5287569EB68 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +98,7 @@
 		2D03FF2D1C048188000CB0C1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2D3CE59E1C05C85800A43964 /* menuData.plist */,
 				2D03FF391C048188000CB0C1 /* Assets.xcassets */,
 				2D03FF3B1C048188000CB0C1 /* LaunchScreen.storyboard */,
 				2D03FF3E1C048188000CB0C1 /* Info.plist */,
@@ -133,11 +148,15 @@
 		2D03FF4A1C048362000CB0C1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2D3CE5A61C05D9BD00A43964 /* RushCell.h */,
+				2D3CE5A71C05D9BD00A43964 /* RushCell.m */,
 				2D0B340C1C048473006966AD /* Main.storyboard */,
 				2D0B34091C048444006966AD /* WBTGNavigationController.h */,
 				2D0B340A1C048444006966AD /* WBTGNavigationController.m */,
 				2D0B340E1C049555006966AD /* WBHomeViewController.h */,
 				2D0B340F1C049555006966AD /* WBHomeViewController.m */,
+				2D3CE5A01C05CFDB00A43964 /* WBMainTableViewCell.h */,
+				2D3CE5A11C05CFDB00A43964 /* WBMainTableViewCell.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,6 +164,8 @@
 		2D03FF4C1C048362000CB0C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2D3CE5A91C05DA7100A43964 /* RushDealsModel.h */,
+				2D3CE5AA1C05DA7100A43964 /* RushDealsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +173,8 @@
 		2D03FF4D1C048362000CB0C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2D3CE5A31C05D42A00A43964 /* JZMTBtnView.h */,
+				2D3CE5A41C05D42A00A43964 /* JZMTBtnView.m */,
 				2D3CE5981C05A82E00A43964 /* WBTestNavBar.h */,
 				2D3CE5991C05A82E00A43964 /* WBTestNavBar.m */,
 				2D3CE5961C05A31200A43964 /* WBnavBar.xib */,
@@ -239,6 +262,7 @@
 			files = (
 				2D3CE5971C05A31200A43964 /* WBnavBar.xib in Resources */,
 				2D0B340D1C048473006966AD /* Main.storyboard in Resources */,
+				2D3CE59F1C05C85800A43964 /* menuData.plist in Resources */,
 				2D03FF3D1C048188000CB0C1 /* LaunchScreen.storyboard in Resources */,
 				2D03FF3A1C048188000CB0C1 /* Assets.xcassets in Resources */,
 			);
@@ -299,11 +323,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3CE5AB1C05DA7100A43964 /* RushDealsModel.m in Sources */,
 				2D3CE59A1C05A82E00A43964 /* WBTestNavBar.m in Sources */,
+				2D3CE5A21C05CFDB00A43964 /* WBMainTableViewCell.m in Sources */,
 				2D0B340B1C048444006966AD /* WBTGNavigationController.m in Sources */,
 				2D03FF4E1C048362000CB0C1 /* AppDelegate.m in Sources */,
+				2D3CE5A51C05D42A00A43964 /* JZMTBtnView.m in Sources */,
 				2D0B34101C049555006966AD /* WBHomeViewController.m in Sources */,
 				2D03FF2F1C048188000CB0C1 /* main.m in Sources */,
+				2D3CE5A81C05D9BD00A43964 /* RushCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
